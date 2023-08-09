@@ -86,10 +86,10 @@ int main()
     getline(cin, alamate.jalan);
 
     cout << " - RT (misal: 05) : ";
-    cin >> alamate.rt;
+    getline(cin, alamate.rt);
 
     cout << " - RW (misal: 03) : ";
-    cin >> alamate.rw;
+    getline(cin, alamate.rw);
 
     cout << " - Desa           : ";
     getline(cin, alamate.desa);
@@ -116,7 +116,7 @@ int main()
     cout << " 3. " << golonganDarah << " - " << jenisKelamin << endl;
     cout << " 4. Jl. " << alamate.jalan << endl;
     cout << "    RT " << alamate.rt << "/" << alamate.rw << " " << alamate.desa << " " << alamate.kec << endl;
-    cout << "    KOTA " << alamate.kota << endl;
+    cout << "    " << alamate.kota << endl;
     cout << " 5. " << pekerjaan << endl;
     cout << " 6. " << alamate.provinsi << endl;
     cout << "===================================================================" << endl;
